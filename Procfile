@@ -1,1 +1,1 @@
-woker: python voice.py
+worker: python voice.py
