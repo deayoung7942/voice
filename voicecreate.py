@@ -9,7 +9,7 @@ bot.remove_command("help")
 
 DISCORD_TOKEN = 'ODUzOTUzNTczNDg5MzQ0NTEy.YMc4PQ.OcskSFpTeEOxW3SVAfu63Rh0AC4'
 
-initial_extensions = ['voice']
+initial_extensions = ['cogs.voice']
 
 if __name__ == '__main__':
     for extension in initial_extensions:
