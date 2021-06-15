@@ -2,12 +2,12 @@ import discord
 from discord.ext import commands
 import traceback
 import sys
+import os
 
 bot = commands.Bot(command_prefix=".")
 
 bot.remove_command("help")
 
-DISCORD_TOKEN = 'ODUzOTUzNTczNDg5MzQ0NTEy.YMc4PQ.LU8_Y4bEKvxxZ2sAFLVI18PO1oA'
 
 initial_extensions = ['cogs.voice']
 
@@ -25,5 +25,5 @@ async def on_ready():
     print(bot.user.name)
     print(bot.user.id)
     print('------')
-
-bot.run(DISCORD_TOKEN)
+access_token = os.environ["BOT_TOKEN"]
+bot.run(access_token)
